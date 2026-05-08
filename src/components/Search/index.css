@@ -1,0 +1,20 @@
+.search-container {
+  background-color: #181818;
+  min-height: 100vh;
+  color: white;
+}
+
+.search-results-container {
+  padding: 140px 60px 40px;
+}
+
+.search-movies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.search-movie-image {
+  width: 100%;
+  border-radius: 8px;
+}

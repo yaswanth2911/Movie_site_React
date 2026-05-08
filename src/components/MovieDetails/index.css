@@ -1,0 +1,207 @@
+/* General Layout & Background */
+.movie-details-container {
+  background-color: #181818; /* Dark background matching the image */
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Banner Section */
+.movie-details-banner {
+  width: 100vw;
+  height: 90vh; /* Takes up most of the screen like a hero banner */
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+/* Overlay for text readability and fade-to-bottom effect */
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(to top, #181818 0%, rgba(24, 24, 24, 0.8) 10%, rgba(24, 24, 24, 0) 40%);
+}
+
+/* Movie Details inside Banner */
+.movie-content {
+  margin-top: auto;
+  margin-bottom: 10%;
+  padding-left: 5%;
+  max-width: 600px; /* Constrain text width */
+}
+
+.movie-title {
+  font-size: 52px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.movie-runtime {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.movie-overview {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #e5e5e5;
+}
+
+/* Play Button */
+.play-button {
+  background-color: #ffffff;
+  color: #181818;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.play-button:hover {
+  background-color: #d8d8d8;
+}
+
+/* Info Section (Grid Layout) */
+.movie-info-section {
+  padding: 40px 5%;
+  background-color: #181818;
+}
+
+.info-row {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  flex: 1;
+}
+
+.info-heading {
+  color: #94a3b8; /* Light gray for headings */
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.info-text {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* Specifically for stacked rating/budget columns */
+.rating-heading {
+  margin-top: 24px;
+}
+
+/* Similar Movies Section */
+.similar-section {
+  margin-top: 20px;
+}
+
+.similar-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.similar-movies-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+  gap: 20px;
+}
+
+.similar-movie-link {
+  text-decoration: none;
+}
+
+.similar-movie-image {
+  width: 100%;
+  aspect-ratio: 16/9; /* Forces the landscape look shown in the image */
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.similar-movie-image:hover {
+  transform: scale(1.03); /* Slight zoom on hover */
+}
+
+/* Loader & Failure Views */
+.loader-container,
+.failure-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #181818;
+}
+
+.failure-image {
+  width: 350px;
+  max-width: 90%;
+}
+
+.failure-text {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+.try-again-button {
+  background-color: #d81f26; /* Netflix red */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 24px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .movie-title {
+    font-size: 36px;
+  }
+  
+  .movie-content {
+    max-width: 90%;
+    margin-bottom: 20%;
+  }
+
+  .similar-movies-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile/tablet */
+  }
+  
+  .info-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+}

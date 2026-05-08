@@ -1,0 +1,76 @@
+.account-container {
+  background-color: #181818;
+  min-height: 100vh;
+  color: white;
+}
+
+.account-content {
+  background-color: white;
+  color: black;
+  padding: 120px 150px 80px;
+  min-height: 80vh;
+}
+
+.account-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.line {
+  border: 1px solid #cbd5e1;
+  margin: 20px 0;
+}
+
+.membership-container,
+.plan-container {
+  display: flex;
+  gap: 30px;
+}
+
+.membership-heading {
+  color: #94a3b8;
+  font-size: 22px;
+}
+
+.membership-text {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.plan-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ultra-hd {
+  border: 1px solid black;
+  padding: 3px 8px;
+  font-size: 14px;
+}
+
+.logout-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.logout-button {
+  width: 120px;
+  height: 40px;
+  background-color: #e50914;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.contact-text {
+  color: white;
+}

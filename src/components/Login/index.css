@@ -1,0 +1,62 @@
+.login-bg-container {
+  background-image: url('https://res.cloudinary.com/ddwvsr90n/image/upload/v1778251028/8ccaf66f19edc15e3aa6b6a1301fd6667bf2509e_xqwzzp.jpg');
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.login-logo {
+  width: 120px;
+}
+
+.login-form-container {
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 350px;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-heading {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.label {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 8px;
+  margin-top: 15px;
+}
+
+.input {
+  background-color: #333333;
+  border: 1px solid #555555;
+  height: 40px;
+  border-radius: 4px;
+  color: white;
+  padding-left: 10px;
+  outline: none;
+}
+
+.login-button {
+  background-color: #e50914;
+  border: none;
+  height: 40px;
+  color: white;
+  margin-top: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.error-message {
+  color: #ff0b37;
+  font-size: 14px;
+  margin-top: 10px;
+}
