@@ -86,7 +86,7 @@ const Login = () => {
           type="text"
           id="username"
           className="input"
-          placeholder="Username"
+          placeholder="rahul"
           value={username}
           onChange={onChangeUsername}
         />
@@ -99,7 +99,7 @@ const Login = () => {
           type="password"
           id="password"
           className="input"
-          placeholder="Password"
+          placeholder="rahul@2021"
           value={password}
           onChange={onChangePassword}
         />
